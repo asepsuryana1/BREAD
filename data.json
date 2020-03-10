@@ -1,0 +1,16 @@
+[
+   {
+      "string": "Eko",
+      "integer": "99",
+      "float": "9,5",
+      "date": "2020-02-01",
+      "boolean": "true"
+   },
+   {
+      "string": "Romi",
+      "integer": "99",
+      "float": "9,5",
+      "date": "2020-02-04",
+      "boolean": "false"
+   }
+]
