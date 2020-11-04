@@ -11,9 +11,13 @@ const writeData = (readData) => fs.writeFileSync('./data.json', JSON.stringify(r
 app.use(bodyParser.urlencoded({
     extended: false
 }))
+
+
 // parse application/json
 app.use(bodyParser.json())
 app.use('/', express.static(path.join(__dirname, 'public')));
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -40,7 +44,7 @@ app.get('/EditData', function (req, res) {
     res.render('EditData',{json:writeData})
 });
 
-app.post('/add', (req, res) => {
+app.post('/AddData', (req, res) => {
     readData.push({
         string: req.body.string,
         integer: req.body.integer,
@@ -48,6 +52,7 @@ app.post('/add', (req, res) => {
         date: req.body.date,
         boolean: req.body.boolean
     })
+  
     writeData(readData);
     res.redirect('/');
 });

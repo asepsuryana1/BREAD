@@ -12,5 +12,12 @@
       "float": "9,5",
       "date": "2020-02-04",
       "boolean": "false"
+   },
+   {
+      "string": "qwert",
+      "integer": "123",
+      "float": "12.3",
+      "date": "11/11/2000",
+      "boolean": "0"
    }
 ]
